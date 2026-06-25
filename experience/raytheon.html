@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raytheon — Affan Dhankwala</title>
+    <meta
+      name="description"
+      content="Affan Dhankwala's work at Raytheon (RTX) — modernizing the PATRIOT missile-borne computer with new software and FPGA designs, building C/C++ Linux device drivers on PolarFire SoC, and strengthening verification and CI/CD for safety-critical aerospace systems."
+    />
+    <link rel="icon" href="../photos/favicon.svg" type="image/svg+xml" />
+    <!-- Apply saved theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "dark" || t === "light")
+            document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__brand" href="../index.html">Affan Dhankwala</a>
+        <div class="nav__links">
+          <a
+            class="nav__resume"
+            href="../photos/Dhankwala_Affan.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+          <a
+            class="social-link"
+            href="https://github.com/affandhankwala"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            title="GitHub"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.33-1.74-1.33-1.74-1.09-.73.08-.72.08-.72 1.2.08 1.84 1.21 1.84 1.21 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 3-.4c1.02 0 2.05.14 3 .4 2.29-1.53 3.3-1.21 3.3-1.21.66 1.65.24 2.87.12 3.17.77.83 1.24 1.88 1.24 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .31.21.68.83.56A12.01 12.01 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z" />
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/affandhankwala/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            title="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z" />
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="mailto:affandhankwala@gmail.com"
+            aria-label="Email Affan"
+            title="Email"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m2 7 10 6 10-6" />
+            </svg>
+          </a>
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-pressed="true"
+            aria-label="Switch to light theme"
+            title="Toggle theme"
+          >
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <a class="back-link" href="../index.html#experience">Back to home</a>
+
+      <header class="page-header">
+        <h1 class="page-header__company">Raytheon</h1>
+        <p class="page-header__role">Software Engineer · Sept 2023 – Present</p>
+        <p class="page-header__meta">
+          <span>📍 Tucson, AZ</span>
+          <span>🛡️ Aerospace &amp; Defense</span>
+          <span>💻 Embedded / Safety-critical</span>
+        </p>
+      </header>
+
+      <section class="section reveal">
+        <h2 class="section__title">Overview</h2>
+        <p>
+          I build safety-critical embedded software for missile and aerospace
+          systems at Raytheon (RTX). My core mission has been modernizing a legacy
+          PATRIOT missile-borne computer — pairing new software designs with
+          FPGA-based hardware to improve performance, robustness, and
+          maintainability — while supporting the autopilot algorithm team in
+          bringing modern guidance algorithms into verifiable, production-grade code.
+        </p>
+        <p>
+          The work spans the full stack of an embedded program: C/C++ and Linux
+          device drivers on a Microchip PolarFire SoC, FPGA-based unit testing and
+          requirements verification, and the CI/CD and tooling that lets a
+          hardware-constrained team move fast. I work across firmware, FPGA, quality,
+          and safety boundaries to validate safety-critical behavior before it ever
+          touches real hardware.
+        </p>
+      </section>
+
+      <section class="section reveal">
+        <h2 class="section__title">What I worked on</h2>
+        <ul class="detail-list">
+          <li>
+            Modernized a legacy PATRIOT missile-borne computer with new software
+            designs and FPGA-based hardware, improving performance, robustness, and
+            maintainability to meet customer requirements.
+          </li>
+          <li>
+            Developed, integrated, and debugged C/C++ software and Linux device
+            drivers on a PolarFire SoC, partnering with firmware, FPGA, quality, and
+            safety teams to validate safety-critical memory maps — and delivered a
+            stakeholder demo that secured approval for further development.
+          </li>
+          <li>
+            Supported the autopilot algorithm team developing modern aerospace
+            guidance algorithms; implemented FPGA-based unit tests and maintained
+            CMake build configurations to enable requirements verification and
+            strengthen CI/CD.
+          </li>
+          <li>
+            Unblocked parallel software development in hardware-limited environments
+            by simulating firmware interactions with memory-mapped I/O on Linux,
+            letting developers exercise bare-metal register transactions and device
+            behavior without physical hardware.
+          </li>
+          <li>
+            Built and maintained CI/CD pipelines enforcing code quality and design
+            correctness, and authored a Python tool that converts IOX memory maps to
+            DDR-backed memory to unblock hardware-constrained development.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section reveal">
+        <h2 class="section__title">Highlighted projects</h2>
+        <div class="detail-projects">
+          <article class="card detail-project">
+            <h3 class="detail-project__title">PATRIOT Modernization &amp; PolarFire Bring-up</h3>
+            <p class="detail-project__desc">
+              Replaced legacy designs on a missile-borne computer with modern C/C++
+              software and FPGA-based hardware on a PolarFire SoC. Wrote and debugged
+              Linux device drivers, validated safety-critical memory maps with the
+              firmware, FPGA, quality, and safety teams, and demoed the result to
+              stakeholders to secure approval for continued development.
+            </p>
+          </article>
+          <article class="card detail-project">
+            <h3 class="detail-project__title">Firmware I/O Simulation</h3>
+            <p class="detail-project__desc">
+              Built a Linux simulation of firmware interactions over memory-mapped
+              I/O so developers could exercise bare-metal register transactions and
+              device behavior without physical hardware — keeping software work
+              moving in parallel with hardware that was scarce or not yet available.
+            </p>
+          </article>
+          <article class="card detail-project">
+            <h3 class="detail-project__title">IOX → DDR Memory-Map Tool</h3>
+            <p class="detail-project__desc">
+              Authored a Python tool that converts IOX memory maps into DDR-backed
+              memory, unblocking hardware-constrained development. Folded it into the
+              CI/CD pipelines alongside FPGA-based unit tests and CMake builds to
+              enforce code quality, design correctness, and requirements verification.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2 class="section__title">Technologies</h2>
+        <ul class="skill-chips">
+          <li class="skill-chip">C</li>
+          <li class="skill-chip">C++</li>
+          <li class="skill-chip">Python</li>
+          <li class="skill-chip">Linux Device Drivers</li>
+          <li class="skill-chip">PolarFire SoC</li>
+          <li class="skill-chip">FPGA</li>
+          <li class="skill-chip">Memory-mapped I/O</li>
+          <li class="skill-chip">CMake</li>
+          <li class="skill-chip">GDB</li>
+          <li class="skill-chip">CI/CD</li>
+          <li class="skill-chip">Git</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Affan Dhankwala</span>
+        <span class="footer__contact">
+          Get in touch:
+          <a href="mailto:affandhankwala@gmail.com">affandhankwala@gmail.com</a>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="../theme.js"></script>
+    <script src="../animations.js"></script>
+  </body>
+</html>

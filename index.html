@@ -8,6 +8,25 @@
       name="description"
       content="Affan Dhankwala — software engineer at Raytheon with an MS in Artificial Intelligence from Johns Hopkins. Embedded aerospace systems, machine learning, and FPV drones."
     />
+    <link rel="icon" href="photos/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Affan Dhankwala — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer at Raytheon with an MS in Artificial Intelligence from Johns Hopkins. Embedded aerospace systems, machine learning, and FPV drones."
+    />
+    <meta property="og:image" content="photos/me.jpg" />
+    <meta property="og:url" content="https://affandhankwala.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Affan Dhankwala — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer at Raytheon. Embedded aerospace systems, machine learning, and FPV drones."
+    />
+    <meta name="twitter:image" content="photos/me.jpg" />
+
     <!-- Apply saved theme before first paint to avoid a flash -->
     <script>
       (function () {
@@ -57,6 +76,17 @@
               <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z" />
             </svg>
           </a>
+          <a
+            class="social-link"
+            href="mailto:affandhankwala@gmail.com"
+            aria-label="Email Affan"
+            title="Email"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m2 7 10 6 10-6" />
+            </svg>
+          </a>
           <button
             class="theme-toggle"
             type="button"
@@ -88,6 +118,9 @@
         />
         <div>
           <h1 class="hero__name">Affan Dhankwala</h1>
+          <p class="hero__role" aria-live="polite">
+            <span class="hero__role-text">Embedded Systems Engineer</span>
+          </p>
           <p class="hero__tagline">
             Software Engineer at Raytheon with an MS in Artificial Intelligence
             from Johns Hopkins and a BS in Computer Engineering from the
@@ -100,10 +133,10 @@
       </section>
 
       <!-- Experience -->
-      <section class="section" id="experience">
+      <section class="section reveal" id="experience">
         <h2 class="section__title">Experience</h2>
         <div class="exp-grid">
-          <article class="card exp-card">
+          <a class="card exp-card exp-card--link" href="experience/raytheon.html">
             <h3 class="exp-card__company">Raytheon</h3>
             <p class="exp-card__role">Software Engineer — Sept 2023 – Present</p>
             <p class="exp-card__body">
@@ -117,9 +150,10 @@
               design correctness, partnering with firmware, FPGA, quality, and
               safety teams to deliver safety-critical embedded software.
             </p>
-          </article>
+            <span class="exp-card__more">Read more</span>
+          </a>
 
-          <article class="card exp-card">
+          <a class="card exp-card exp-card--link" href="experience/microsoft.html">
             <h3 class="exp-card__company">Microsoft</h3>
             <p class="exp-card__role">Software Engineer Intern — May 2018 – Aug 2018</p>
             <p class="exp-card__body">
@@ -132,12 +166,56 @@
               management while driving work through agile sprints from planning to
               deployment.
             </p>
-          </article>
+            <span class="exp-card__more">Read more</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section reveal" id="skills">
+        <h2 class="section__title">Skills &amp; Tech</h2>
+        <div class="skills-grid">
+          <div class="card skill-group">
+            <h3 class="skill-group__title">Languages</h3>
+            <ul class="skill-chips">
+              <li class="skill-chip">C</li>
+              <li class="skill-chip">C++</li>
+              <li class="skill-chip">Python</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3 class="skill-group__title">Machine Learning &amp; AI</h3>
+            <ul class="skill-chips">
+              <li class="skill-chip">PyTorch</li>
+              <li class="skill-chip">Reinforcement Learning</li>
+              <li class="skill-chip">Neural Networks</li>
+              <li class="skill-chip">Computer Vision</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3 class="skill-group__title">Embedded &amp; Systems</h3>
+            <ul class="skill-chips">
+              <li class="skill-chip">Linux Device Drivers</li>
+              <li class="skill-chip">FPGA</li>
+              <li class="skill-chip">PolarFire SoC</li>
+              <li class="skill-chip">Memory-mapped I/O</li>
+              <li class="skill-chip">RTOS Concepts</li>
+            </ul>
+          </div>
+          <div class="card skill-group">
+            <h3 class="skill-group__title">Tooling &amp; Practice</h3>
+            <ul class="skill-chips">
+              <li class="skill-chip">Git</li>
+              <li class="skill-chip">CI/CD</li>
+              <li class="skill-chip">Agile</li>
+              <li class="skill-chip">Unit Testing</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- Education -->
-      <section class="section" id="education">
+      <section class="section reveal" id="education">
         <h2 class="section__title">Education</h2>
         <div class="exp-grid">
           <article class="card exp-card">
@@ -165,62 +243,135 @@
       </section>
 
       <!-- Projects -->
-      <section class="section" id="projects">
+      <section class="section reveal" id="projects">
         <h2 class="section__title">Projects</h2>
         <ul class="project-list">
           <li class="project-item">
-            <a href="https://github.com/affandhankwala/Tower-Defense" target="_blank" rel="noopener noreferrer">
-              <span class="project-item__title">Tower-Defense</span>
-            </a>
-            <p class="project-item__desc">
-              Tower-defense game where players control Martians placing towers against advancing humans.
-            </p>
+            <span class="project-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2.5" />
+                <circle cx="8.5" cy="8.5" r="1.6" />
+                <path d="m21 15-4.5-4.5L5 21" />
+              </svg>
+            </span>
+            <div class="project-item__body">
+              <a href="https://github.com/affandhankwala/Image-Classification-via-PyTorch" target="_blank" rel="noopener noreferrer">
+                <span class="project-item__title">Image Classification via PyTorch</span>
+              </a>
+              <p class="project-item__desc">
+                Compares fully-connected vs. convolutional networks for image classification on the Intel dataset.
+              </p>
+            </div>
           </li>
           <li class="project-item">
-            <a href="https://github.com/affandhankwala/RL-based-Racecar" target="_blank" rel="noopener noreferrer">
-              <span class="project-item__title">RL-based Racecar</span>
-            </a>
-            <p class="project-item__desc">
-              RL racecar learning optimal driving policies via Value Iteration, Q-Learning, and SARSA.
-            </p>
+            <span class="project-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="5" cy="6" r="1.7" />
+                <circle cx="5" cy="18" r="1.7" />
+                <circle cx="12" cy="12" r="1.7" />
+                <circle cx="19" cy="6" r="1.7" />
+                <circle cx="19" cy="18" r="1.7" />
+                <path d="M6.5 6.9 10.6 11.1M6.5 17.1 10.6 12.9M13.4 11.1 17.5 6.9M13.4 12.9 17.5 17.1" />
+              </svg>
+            </span>
+            <div class="project-item__body">
+              <a href="https://github.com/affandhankwala/NeuralNetworkCourseProject" target="_blank" rel="noopener noreferrer">
+                <span class="project-item__title">Neural Network Course Project</span>
+              </a>
+              <p class="project-item__desc">
+                A feed-forward backprop neural network built from scratch in Python for binary classification.
+              </p>
+            </div>
           </li>
           <li class="project-item">
-            <a href="https://github.com/affandhankwala/RL-based-Gold-Explorer-SARSA-vs-Q-Learning" target="_blank" rel="noopener noreferrer">
-              <span class="project-item__title">RL-based Gold Explorer (SARSA vs Q-Learning)</span>
-            </a>
-            <p class="project-item__desc">
-              Q-Learning and SARSA agents compete on an 8×8 grid-world gold-hunting task.
-            </p>
+            <span class="project-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 17v-2.7a2 2 0 0 1 .2-.9l1.7-3.4A2 2 0 0 1 7.7 9h8.6a2 2 0 0 1 1.8 1l1.7 3.4a2 2 0 0 1 .2.9V17" />
+                <path d="M3 17h18" />
+                <circle cx="7.5" cy="17.5" r="1.8" />
+                <circle cx="16.5" cy="17.5" r="1.8" />
+              </svg>
+            </span>
+            <div class="project-item__body">
+              <a href="https://github.com/affandhankwala/RL-based-Racecar" target="_blank" rel="noopener noreferrer">
+                <span class="project-item__title">RL-based Racecar</span>
+              </a>
+              <p class="project-item__desc">
+                RL racecar learning optimal driving policies via Value Iteration, Q-Learning, and SARSA.
+              </p>
+            </div>
           </li>
           <li class="project-item">
-            <a href="https://github.com/affandhankwala/RL-based-Battleship-Game" target="_blank" rel="noopener noreferrer">
-              <span class="project-item__title">RL-based Battleship Game</span>
-            </a>
-            <p class="project-item__desc">
-              An RL agent that learns to efficiently locate and sink randomly placed ships on a grid.
-            </p>
+            <span class="project-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="6.5" rx="6.5" ry="2.8" />
+                <path d="M5.5 6.5v4c0 1.55 2.9 2.8 6.5 2.8s6.5-1.25 6.5-2.8v-4" />
+                <path d="M5.5 10.5v4c0 1.55 2.9 2.8 6.5 2.8s6.5-1.25 6.5-2.8v-4" />
+              </svg>
+            </span>
+            <div class="project-item__body">
+              <a href="https://github.com/affandhankwala/RL-based-Gold-Explorer-SARSA-vs-Q-Learning" target="_blank" rel="noopener noreferrer">
+                <span class="project-item__title">RL-based Gold Explorer (SARSA vs Q-Learning)</span>
+              </a>
+              <p class="project-item__desc">
+                Q-Learning and SARSA agents compete on an 8×8 grid-world gold-hunting task.
+              </p>
+            </div>
           </li>
           <li class="project-item">
-            <a href="https://github.com/affandhankwala/NeuralNetworkCourseProject" target="_blank" rel="noopener noreferrer">
-              <span class="project-item__title">Neural Network Course Project</span>
-            </a>
-            <p class="project-item__desc">
-              A feed-forward backprop neural network built from scratch in Python for binary classification.
-            </p>
+            <span class="project-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 14h18l-1.8 4a2 2 0 0 1-1.8 1.2H6.6A2 2 0 0 1 4.8 18z" />
+                <path d="M6.5 14V9.5h6L15 14" />
+                <path d="M12 9.5V5" />
+                <path d="M12 5h3.5l-1 1.8 1 1.7H12" />
+              </svg>
+            </span>
+            <div class="project-item__body">
+              <a href="https://github.com/affandhankwala/RL-based-Battleship-Game" target="_blank" rel="noopener noreferrer">
+                <span class="project-item__title">RL-based Battleship Game</span>
+              </a>
+              <p class="project-item__desc">
+                An RL agent that learns to efficiently locate and sink randomly placed ships on a grid.
+              </p>
+            </div>
           </li>
           <li class="project-item">
-            <a href="https://github.com/affandhankwala/Image-Classification-via-PyTorch" target="_blank" rel="noopener noreferrer">
-              <span class="project-item__title">Image Classification via PyTorch</span>
-            </a>
-            <p class="project-item__desc">
-              Compares fully-connected vs. convolutional networks for image classification on the Intel dataset.
-            </p>
+            <span class="project-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 19 6v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </span>
+            <div class="project-item__body">
+              <a href="https://github.com/affandhankwala/Tower-Defense" target="_blank" rel="noopener noreferrer">
+                <span class="project-item__title">Tower-Defense</span>
+              </a>
+              <p class="project-item__desc">
+                Tower-defense game where players control Martians placing towers against advancing humans.
+              </p>
+            </div>
           </li>
-          <li class="project-item project-item--static">
-            <span class="project-item__title">Drones</span>
-            <p class="project-item__desc">
-              Building and programming custom FPV drones from the ground up — assembling the hardware and writing the flight software myself.
-            </p>
+          <li class="project-item project-item--feature">
+            <span class="project-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="5" cy="5" r="2.6" />
+                <circle cx="19" cy="5" r="2.6" />
+                <circle cx="5" cy="19" r="2.6" />
+                <circle cx="19" cy="19" r="2.6" />
+                <path d="M7 7 L10.2 10.2 M17 7 L13.8 10.2 M7 17 L10.2 13.8 M17 17 L13.8 13.8" />
+                <rect x="9.5" y="9.5" width="5" height="5" rx="1.2" />
+                <path d="M5 2.6v.2M19 2.6v.2M5 21.4v-.2M19 21.4v-.2" />
+              </svg>
+            </span>
+            <div class="project-item__body">
+              <span class="project-item__title">FPV Drones</span>
+              <p class="project-item__desc">
+                Building and programming custom FPV drones from the ground up — assembling the
+                hardware and writing the flight software myself. A hands-on outlet for the same
+                embedded, controls, and aerospace work I do professionally.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -229,6 +380,10 @@
     <footer class="footer">
       <div class="container footer__inner">
         <span>© <span id="year"></span> Affan Dhankwala</span>
+        <span class="footer__contact">
+          Get in touch:
+          <a href="mailto:affandhankwala@gmail.com">affandhankwala@gmail.com</a>
+        </span>
       </div>
     </footer>
 
@@ -236,5 +391,6 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="theme.js"></script>
+    <script src="animations.js"></script>
   </body>
 </html>
